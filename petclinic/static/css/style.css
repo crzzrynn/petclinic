@@ -1,0 +1,213 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4; /* Light gray background for the whole page */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #09991c; /* Bootstrap primary color */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+/* Navigation styles */
+nav {
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Main content styles */
+main {
+    padding: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #09991c; /* Dark background for footer */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    nav ul li {
+        display: block; /* Stack links on smaller screens */
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Styles specific to the client page */
+#client-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #e9f7ef; /* Light green background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles specific to the pets page */
+#pets-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fce4ec; /* Light pink background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles specific to the medical records page */
+/* Styles specific to the medical records page */
+#medical-record-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #e3f2fd; /* Light blue background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles specific to the appointments page */
+#appointments-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff3e0; /* Light orange background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styles specific to the articles page */
+#articles-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f1f8e9; /* Light greenish background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Common styles for headings in all containers */
+h2 {
+    text-align: center;
+    color: #333; /* Darker text color for headings */
+}
+
+/* Common form styles (if applicable) */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background-color: #007bff; /* Default button color */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Styles specific to the login page */
+#login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff; /* White background for the form */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#login-container h2 {
+    text-align: center;
+    color: #333; /* Darker text color */
+}
+
+#login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+#login-container form button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background-color: #28a745; 
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#login-container form button:hover {
+    background-color: #218838;
+}
+
+/* Styles specific to the registration page */
+#register-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f9f9f9;     border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#register-container h2 {
+    text-align: center;
+    color: #000000; 
+}
+
+#register-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+#register-container form button {
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    background-color: #28a745; 
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#register-container form button:hover {
+    background-color: #218838; 
+}

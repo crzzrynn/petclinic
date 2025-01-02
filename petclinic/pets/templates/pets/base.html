@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}PawPrints{% endblock %}</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <h1>PawPrints Animal Clinic</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'client_list' %}">Clients</a></li>
+                <li><a href="{% url 'pet_list' %}">Pets</a></li>
+                <li><a href="{% url 'medical_record_list' %}">Medical Records</a></li>
+                <li><a href="{% url 'appointment_list' %}">Appointments</a></li>
+                <li><a href="{% url 'article_list' %}">Articles</a></li>
+                {% if user.is_authenticated %}
+                <li><a href="{% url 'logout' %}">Logout</a></li>
+            {% endif %}
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; {{ current_year }} Pet Management System</p>
+    </footer>
+</body>
+</html>

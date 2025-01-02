@@ -1,0 +1,12 @@
+{% extends "pets/base.html" %}
+{% block title %}Add Pet{% endblock %}
+
+{% block content %}
+<h2>Add Pet</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-success">Save</button>
+</form>
+<a href="{% url 'pet_list' %}" class="btn btn-secondary">Back to Pet List</a>
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends "pets/base.html" %}
+{% block content %}
+
+<div id="client-container">
+<h2>Clients</h2>
+<a href="{% url 'create_client' %}">Add New Client</a>
+<ul>
+    {% for client in clients %}
+        <li>
+            {{ client.user.username }} - {{ client.phone_number }}
+            <a href="{% url 'edit_client' client.id %}">Edit</a>
+            <a href="{% url 'delete_client' client.id %}">Delete</a>
+        </li>
+    {% endfor %}
+</ul>
+
+</div>
+{% endblock %}

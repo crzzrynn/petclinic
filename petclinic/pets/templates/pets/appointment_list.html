@@ -1,0 +1,18 @@
+{% extends "pets/base.html" %}
+{% block content %}
+
+<div id="appointments-container">
+<h2>Appointments</h2>
+<a href="{% url 'create_appointment' %}">Schedule New Appointment</a>
+<ul>
+    {% for appointment in appointments %}
+        <li>
+            {{ appointment.pet.name }} - {{ appointment.date }} ({{ appointment.status }})
+            <a href="{% url 'edit_appointment' appointment.id %}">Edit</a>
+            <a href="{% url 'delete_appointment' appointment.id %}">Delete</a>
+        </li>
+    {% endfor %}
+</ul>
+
+</div>
+{% endblock %}

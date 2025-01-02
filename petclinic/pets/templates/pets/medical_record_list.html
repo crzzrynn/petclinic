@@ -1,0 +1,18 @@
+{% extends "pets/base.html" %}
+{% block content %}
+
+<div id="medical-record-container">
+<h2>Medical Records</h2>
+<a href="{% url 'create_medical_record' %}">Add New Medical Record</a>
+<ul>
+    {% for record in records %}
+        <li>
+            {{ record.pet.name }} - {{ record.date }}
+            <a href="{% url 'edit_medical_record' record.id %}">Edit</a>
+            <a href="{% url 'delete_medical_record' record.id %}">Delete</a>
+        </li>
+    {% endfor %}
+</ul>
+
+</div>
+{% endblock %}
